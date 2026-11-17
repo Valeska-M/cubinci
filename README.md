@@ -1,10 +1,10 @@
-# Tetris in Python & Pygame
-My (pastel &amp; pretty) version of tetris. I created this game as one of my earlier programming projects to improve my Python skills and gain practical experience in developing interactive applications. In addition to the classic Tetris mode, I implemented a second game mode featuring predefined levels and challenges.
+# Cubinci (inspired by Tetris) in Python & Pygame
+My (pastel &amp; pretty) game cubinci, inspired by tetris. I created this game as one of my earlier programming projects to improve my Python skills and gain practical experience in developing interactive applications. In addition to the classic game mode, I implemented a second mode featuring predefined levels and challenges.
 
-![Tetris Gameplay](Gameplay.gif)
+![Cubinci Gameplay](Gameplay.gif)
 
 # Features
-- Two game modes: classic Tetris with increasing difficulty and a challenge mode with predefined playing fields
+- Two game modes: classic game mode with increasing difficulty and a challenge mode with predefined playing fields
 - Custom movement, rotation, and collision detection algorithms
 - Ghost piece indicating the current piece's landing position
 - Scoring system, level progression, and preview of upcoming pieces

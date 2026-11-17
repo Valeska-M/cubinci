@@ -1,14 +1,14 @@
 <html lang="en-us"><script src="https://pygame-web.github.io/cdn/0.9.3/pythons.js" type=module id="site" data-python="python3.12" data-LINES=42 data-COLUMNS=132 data-os="vtx,snd,gui" async defer>#<!--
 
 print("""
-Loading tetris from tetris.apk
+Loading cubinci from cubinci.apk
     Pygbag Version : 0.9.3
     Template Version : 0.9.3
     Python  : 3.12
     CDN URL : https://pygame-web.github.io/cdn/0.9.3/
     Screen  : 900x630
-    Title   : tetris
-    Folder  : tetris
+    Title   : cubinci
+    Folder  : cubinci
     Authors : pgw
     SPDX-License-Identifier: cookiecutter.spdx
 
@@ -28,22 +28,22 @@ async def custom_site():
     platform.window.canvas.style.visibility = "visible"
 
 
-    bundle = "tetris"
+    bundle = "cubinci"
 
     # the C or js loader could do that but be explicit.
-    appdir = Path(f"/data/data/{bundle}") # /data/data/tetris
+    appdir = Path(f"/data/data/{bundle}") # /data/data/cubinci
     appdir.mkdir()
 
 
     # unpack filesystem from compressed archive into work dir
     if platform.window.location.host.find('.itch.zone')>0:
         import zipfile
-        async with platform.fopen("tetris.apk", "rb") as archive:
+        async with platform.fopen("cubinci.apk", "rb") as archive:
             with zipfile.ZipFile(archive) as zip_ref:
                 zip_ref.extractall(appdir.as_posix())
     else:
         import tarfile
-        async with platform.fopen("tetris.tar.gz", "rb") as archive:
+        async with platform.fopen("cubinci.tar.gz", "rb") as archive:
             tar = tarfile.open(fileobj=archive, mode="r:gz")
             tar.extractall(path=appdir.as_posix(), filter='tar')
             tar.close()
@@ -136,7 +136,7 @@ config = {
     gui_divider : 2,
     ume_block : 1,
     can_close : 0,
-    archive : "tetris",
+    archive : "cubinci",
     gui_debug : 2,
     cdn : "https://pygame-web.github.io/cdn/0.9.3/",
     autorun : 0,
@@ -152,7 +152,7 @@ function show_infobox() {
 
 </script>
 
-    <title>tetris</title>
+    <title>cubinci</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -161,7 +161,7 @@ function show_infobox() {
     <meta name="apple-mobile-web-app-capable" content="yes"/>
 
     <link rel="preload" href="./fonts/Righteous-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon_cubinci.png">
 
     <style>
         @font-face {
@@ -306,7 +306,7 @@ function show_infobox() {
     </canvas>
 
     <div id="infobox">
-        <p id="headline">Tetris</p>
+        <p id="headline">Cubinci</p>
         <div id="wrapper-infotext">
             <div id="highlight"></div>
             <p id="infotext">Spiel wird geladen ...</p>

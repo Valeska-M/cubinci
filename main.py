@@ -1,3 +1,9 @@
+#region Anleitung pygbag
+    # nach Änderungen am Spiel, die online gezeigt werden sollen:
+    # im Terminal im Projektordner "python -m pygbag --template pygbag-cubinci.tmpl ."
+    # im Anschluss Inhalt des web-ordners in den Ordner "docs" kopieren
+#endregion
+
 #region Setup
 import pygame, os, math, random, asyncio
 
@@ -286,7 +292,7 @@ async def main():
     screen = pygame.display.set_mode((Width,Height),pygame.RESIZABLE)
     print("Pygame-Auflösung:", pygame.display.get_surface().get_size())
 
-    pygame.display.set_caption("Tetris")
+    pygame.display.set_caption("Cubinci")
     clock = pygame.time.Clock()
 
     running = True
@@ -348,7 +354,7 @@ async def main():
 
             #Überschrift
             font = Schrift_laden(int(Blockhöhe*2))
-            surface = font.render("Tetris",True, Schriftfarbe1)
+            surface = font.render("Cubinci",True, Schriftfarbe1)
             Text_x,Text_y = Koordinaten_zu_Pixelposition(Breite_Spielfeld/2,4)
             screen.blit(surface,(Text_x-surface.get_width()/2,Text_y-surface.get_height()/2))
             #Buttons klicken
