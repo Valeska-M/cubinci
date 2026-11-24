@@ -18,7 +18,7 @@ I used pygbag to upload the game, so all you need are your arrow keys (and a lit
 **Object-oriented programming**\
 By implementing custom classes for game pieces and buttons, I gained practical experience with object-oriented programming, including classes, attributes, and methods.
 
-**Algorithms and data dtructures**\
+**Algorithms and data structures**\
 One of the main challenges was developing the game's underlying logic. This included representing the playing field as a two-dimensional list and implementing algorithms for movement, rotation, collision detection, and clearing completed rows.
 
 **Event-driven programming**\
