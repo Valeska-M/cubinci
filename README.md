@@ -1,7 +1,10 @@
 # Cubinci (inspired by Tetris) in Python & Pygame
 My (pastel &amp; pretty) game cubinci, inspired by tetris. I created this game as one of my earlier programming projects to improve my Python skills and gain practical experience in developing interactive applications. In addition to the classic game mode, I implemented a second mode featuring predefined levels and challenges.
 
-![Cubinci Gameplay](Gameplay.gif)
+![Cubinci Gameplay](assets/Gameplay.gif)
+
+I used pygbag to upload the game, so all you need are your arrow keys (and a little patience while the runtime environment is created) and you can play Cubinci yourself:
+[Play Cubinci](https://valeska-m.github.io/cubinci/)
 
 # Features
 - Two game modes: classic game mode with increasing difficulty and a challenge mode with predefined playing fields
